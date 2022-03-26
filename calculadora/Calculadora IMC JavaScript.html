@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULADORA IMC</title>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+  </head>
+  <body>
+    <h1>VAMOS VER O SEU IMC</h1>
+    <div class="contanier">
+      <div class="first-step">
+        <p>Clique no Botão para calcular</p>
+        <button onclick="go(1,2)">Iniciar</button>
+      </div>
+      <div class="second-step">
+        <h3>CALCULADORA IMC</h3>
+        <hr />
+        <label for="peso">Digite seu peso:</label>
+        <input type="number" placeholder="Seu peso" id="peso" />
+        <br /><br />
+
+        <label for="altura">Digite sua altura:</label>
+        <input type="number" placeholder="Sua Altura" id="altura" />
+        <br /><br />
+        <button onclick="validate()">Calcular</button>
+      </div>
+      <div class="final-step">
+        <h3>RESULTADO!!</h3>
+        <p id="result"></p>
+        <button onclick="go(3,2)">Calcular Novamante</button>
+        <button onclick="go(3,1)">Finalizar</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="resultado.js"></script>
+</html>

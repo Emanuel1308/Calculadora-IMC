@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aqua;
+  text-align: center;
+  color: #fff;
+}
+
+.contanier {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*Cntralizar a div conteiner*/
+
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+button {
+  background-color: blue;
+  color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer; /*Mudar o mouse quando for para cima do butoom*/
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.second-step,
+.final-step {
+  display: none;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none; /*Retirar as linhas azuis em volta do input*/
+}
+
+#result {
+  font-weight: bold;
+  font-size: 20px;
+}
